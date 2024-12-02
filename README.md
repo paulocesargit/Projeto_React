@@ -138,3 +138,35 @@ Serve como o ponto de principal do projeto.
 2. **Explicar como funciona o `<Menu dishes={dishes} />`:**
    - Passa a lista de pratos (`dishes`) como uma prop para o componente `Menu`.
    - Permite ao componente `Menu` acessar os dados e renderizar os cartões.
+
+# Explicação das alteraçoes feitas 27/11/24
+
+# Estrutura do Projeto
+
+Arquivos Criados e Modificados
+Novo arquivo: DishdetailComponent.js
+Criado para implementar o componente que exibe os detalhes de um prato selecionado.
+
+Arquivo modificado: MenuComponent.js
+Atualizado para integrar o DishdetailComponent e passar o prato selecionado como props.
+
+# Funcionalidades Implementadas
+
+**Componente DishDetail**
+Descrição:
+Exibe os detalhes do prato selecionado em um cartão e lista os comentários associados a ele.
+
+# Estrutura:
+
+O componente contém duas funções principais:
+
+renderDish(dish): Renderiza os detalhes do prato selecionado em um cartão usando Reactstrap.
+renderComments(comments): Renderiza a lista de comentários associados ao prato.
+
+Modificamos o componente MenuComponent para integrar o DishdetailComponent. Agora, quando o usuário clica em um prato, ele é selecionado e passado para o DishDetail como propriedade (props).
+
+# Utilizamos classes do Bootstrap para garantir um layout responsivo:
+
+col-12: O componente ocupa a largura total em telas pequenas (xs e sm).
+col-md-5: O componente ocupa 5 colunas em telas médias (md) ou maiores.
+m-1: Margem ao redor dos elementos.

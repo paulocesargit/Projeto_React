@@ -139,7 +139,7 @@ Serve como o ponto de principal do projeto.
    - Passa a lista de pratos (`dishes`) como uma prop para o componente `Menu`.
    - Permite ao componente `Menu` acessar os dados e renderizar os cartões.
 
-# Explicação das alteraçoes feitas 27/11/24
+# Explicação das alteraçoes feitas 29/11/24
 
 # Estrutura do Projeto
 
